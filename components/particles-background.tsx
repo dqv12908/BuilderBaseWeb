@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react"
 import { motion } from "motion/react"
 import { cn } from "@/lib/utils"
-import Link from "next/link"
 
 
 interface CyberBackgroundProps {
@@ -86,20 +85,6 @@ function createNoise() {
   }
 }
 
-const COLOR_SCHEME = {
-  light: {
-    particle: {
-      color: "rgba(0, 0, 0, 0.07)",
-    },
-    background: "rgba(255, 255, 255, 0.12)",
-  },
-  dark: {
-    particle: {
-      color: "rgba(255, 255, 255, 0.07)",
-    },
-    background: "rgba(0, 0, 0, 0.12)",
-  },
-} as const
 
 interface Particle {
   x: number
@@ -171,7 +156,6 @@ export default function ParticlesBackground({
 
     const animate = () => {
       const isDark = document.documentElement.classList.contains("dark")
-      const scheme = isDark ? COLOR_SCHEME.dark : COLOR_SCHEME.light
 
       ctx.fillStyle = isDark ? "rgba(0, 0, 0, 0.1)" : "rgba(255, 255, 255, 0.1)"
       ctx.fillRect(0, 0, canvas.width, canvas.height)
@@ -188,7 +172,7 @@ export default function ParticlesBackground({
 
         const n = noise.simplex3(particle.x * noiseIntensity, particle.y * noiseIntensity, Date.now() * 0.0001)
 
-        let angle = n * Math.PI * 4
+        const angle = n * Math.PI * 4
         let velocityX = Math.cos(angle) * 2
         let velocityY = Math.sin(angle) * 2
 

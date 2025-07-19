@@ -2,6 +2,7 @@
 
 import ParticlesBackground from "@/components/particles-background"
 import { useState, useRef, useCallback } from "react"
+import Image from "next/image"
 
 function InteractiveWhoAreWeSection() {
   const [networkPosition, setNetworkPosition] = useState({ x: 0, y: 0 })
@@ -45,7 +46,7 @@ function InteractiveWhoAreWeSection() {
                 We are a vibrant community of ambitious high school students, university students, fresh graduates, and passionate builders who share an unwavering love for Web3 and blockchain technology.
               </p>
               <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                United by our vision to shape the decentralized future, we collaborate, innovate, and push the boundaries of what's possible in the Web3 space. From smart contracts to DApps, we're building the next generation of digital experiences.
+                United by our vision to shape the decentralized future, we collaborate, innovate, and push the boundaries of what&apos;s possible in the Web3 space. From smart contracts to DApps, we&apos;re building the next generation of digital experiences.
               </p>
               <div className="flex items-center space-x-4 text-sm text-zinc-500 dark:text-zinc-500">
                 <span className="flex items-center">
@@ -183,7 +184,13 @@ function InteractiveWhoAreWeSection() {
                     animationDelay: '0s'
                   }}
                 >
-                  <img src="https://dongphucgiadinh.com/wp-content/uploads/2022/09/logo-dai-hoc-bach-khoa.png" alt="" className="max-w-full max-h-full object-contain p-3" />
+                  <Image 
+                    src="https://dongphucgiadinh.com/wp-content/uploads/2022/09/logo-dai-hoc-bach-khoa.png" 
+                    alt="Bach Khoa University logo" 
+                    width={200}
+                    height={100}
+                    className="max-w-full max-h-full object-contain p-3" 
+                  />
                 </div>
                 
                 {/* Card 2 - Top Right */}
@@ -195,7 +202,13 @@ function InteractiveWhoAreWeSection() {
                     animationDelay: '0.5s'
                   }}
                 >
-                  <img src="https://static.wixstatic.com/media/9d8ed5_336615d52be3476585eed2e7bbdd3224~mv2.png/v1/fill/w_980,h_388,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/9d8ed5_336615d52be3476585eed2e7bbdd3224~mv2.png" alt="" className="max-w-full max-h-full object-contain p-3" />
+                  <Image 
+                    src="https://static.wixstatic.com/media/9d8ed5_336615d52be3476585eed2e7bbdd3224~mv2.png/v1/fill/w_980,h_388,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/9d8ed5_336615d52be3476585eed2e7bbdd3224~mv2.png" 
+                    alt="Vinschool logo" 
+                    width={200}
+                    height={100}
+                    className="max-w-full max-h-full object-contain p-3" 
+                  />
                 </div>
                 
                 {/* Center Text - Builder Base */}
@@ -223,7 +236,13 @@ function InteractiveWhoAreWeSection() {
                     animationDelay: '1s'
                   }}
                 >
-                  <img src="https://inkythuatso.com/uploads/images/2021/12/logo-dai-hoc-giao-thong-van-tai-inkythuatso-01-23-15-59-45.jpg" alt="" className="max-w-full max-h-full object-contain p-3" />
+                  <Image 
+                    src="https://inkythuatso.com/uploads/images/2021/12/logo-dai-hoc-giao-thong-van-tai-inkythuatso-01-23-15-59-45.jpg" 
+                    alt="University of Transportation and Communication logo" 
+                    width={200}
+                    height={100}
+                    className="max-w-full max-h-full object-contain p-3" 
+                  />
                 </div>
                 
                 {/* Card 5 - Bottom Right */}
@@ -235,7 +254,13 @@ function InteractiveWhoAreWeSection() {
                     animationDelay: '1.5s'
                   }}
                 >
-                  <img src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/452928823_916337223855126_8701319332979974698_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=8Z3soIwuf88Q7kNvwGMnxTu&_nc_oc=Adm_shR3f7sUdRQvusxLC_vwnL-mh67PYpUpFJrCeGxYOrJjkJoR8MB3wEPK2l8AIh0&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=vHbu3ZTtLI4xfip1QrKWJg&oh=00_AfTG3mkuk2qd19SqWqDA-hYtYthpB00DUKDno_wJRCTPMA&oe=68816EAC" alt="" className="max-w-full max-h-full object-contain p-3" />
+                  <Image 
+                    src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/452928823_916337223855126_8701319332979974698_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=8Z3soIwuf88Q7kNvwGMnxTu&_nc_oc=Adm_shR3f7sUdRQvusxLC_vwnL-mh67PYpUpFJrCeGxYOrJjkJoR8MB3wEPK2l8AIh0&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=vHbu3ZTtLI4xfip1QrKWJg&oh=00_AfTG3mkuk2qd19SqWqDA-hYtYthpB00DUKDno_wJRCTPMA&oe=68816EAC" 
+                    alt="Foreign Trade University logo" 
+                    width={200}
+                    height={100}
+                    className="max-w-full max-h-full object-contain p-3" 
+                  />
                 </div>
                 
                 {/* Card 6 - And Expanding Text */}
@@ -314,7 +339,7 @@ const FAQSection = () => {
     },
     {
       question: "What programming skills do I need?",
-      answer: "Basic programming knowledge is helpful but not mandatory. We accept beginners and provide learning resources. If you know JavaScript, Python, Solidity, or other programming languages, that's great! If not, we'll help you learn as part of your Web3 journey."
+      answer: "Basic programming knowledge is helpful but not mandatory. We accept beginners and provide learning resources. If you know JavaScript, Python, Solidity, or other programming languages, that&apos;s great! If not, we&apos;ll help you learn as part of your Web3 journey."
     },
     {
       question: "Is there a membership fee?",
@@ -322,7 +347,7 @@ const FAQSection = () => {
     },
     {
       question: "How much time commitment is required?",
-      answer: "We're flexible! You can participate as much or as little as your schedule allows. Most members spend 2-5 hours per week on community activities, projects, or learning. During hackathons or special projects, involvement may increase temporarily."
+      answer: "We&apos;re flexible! You can participate as much or as little as your schedule allows. Most members spend 2-5 hours per week on community activities, projects, or learning. During hackathons or special projects, involvement may increase temporarily."
     },
     {
       question: "What language do you use for communication?",
@@ -330,7 +355,7 @@ const FAQSection = () => {
     },
     {
       question: "How are paid opportunities distributed?",
-      answer: "When our team receives client projects that exceed our capacity, we distribute tasks to qualified community members based on their skills, availability, and past contributions. Payment is always fair and prompt. It's a great way to gain real-world experience while earning income."
+      answer: "When our team receives client projects that exceed our capacity, we distribute tasks to qualified community members based on their skills, availability, and past contributions. Payment is always fair and prompt. It&apos;s a great way to gain real-world experience while earning income."
     },
     {
       question: "What happens after I apply?",
@@ -541,11 +566,11 @@ export default function Page() {
                     Guidance & Support
                   </h3>
                   <p className="text-zinc-600 dark:text-zinc-400 mb-6">
-                    Get mentorship and support from experienced community members who've walked the Web3 journey before you.
+                    Get mentorship and support from experienced community members who&apos;ve walked the Web3 journey before you.
                   </p>
                   <div className="bg-zinc-100 dark:bg-zinc-800 p-4 rounded border">
                     <div className="text-xs font-mono text-zinc-600 dark:text-zinc-400 mb-2">
-                      // 24/7 community support
+                      {`// 24/7 community support`}
                     </div>
                     <div className="text-sm font-mono text-zinc-800 dark:text-zinc-200">
                       mentorship.connect()
@@ -571,7 +596,7 @@ export default function Page() {
                   </p>
                   <div className="bg-zinc-100 dark:bg-zinc-800 p-4 rounded border">
                     <div className="text-xs font-mono text-zinc-600 dark:text-zinc-400 mb-2">
-                      // Weekly paid opportunities
+                      {`// Weekly paid opportunities`}
                     </div>
                     <div className="text-sm font-mono text-zinc-800 dark:text-zinc-200">
                       income.generate()
@@ -597,7 +622,7 @@ export default function Page() {
                   </p>
                   <div className="bg-zinc-100 dark:bg-zinc-800 p-4 rounded border">
                     <div className="text-xs font-mono text-zinc-600 dark:text-zinc-400 mb-2">
-                      // Exclusive event access
+                      {`// Exclusive event access`}
                     </div>
                     <div className="text-sm font-mono text-zinc-800 dark:text-zinc-200">
                       events.getTickets()
@@ -622,7 +647,7 @@ export default function Page() {
                   </p>
                   <div className="bg-zinc-100 dark:bg-zinc-800 p-4 rounded border">
                     <div className="text-xs font-mono text-zinc-600 dark:text-zinc-400 mb-2">
-                      // Real project experience
+                      {`// Real project experience`}
                     </div>
                     <div className="text-sm font-mono text-zinc-800 dark:text-zinc-200">
                       skills.levelUp()
@@ -663,7 +688,7 @@ export default function Page() {
                     {'> apply_now()'}
                   </div>
                   <div className="text-xs text-zinc-500 dark:text-zinc-400 mt-1">
-                    // Join the builder community
+                    {`// Join the builder community`}
                   </div>
                 </a>
               </div>
@@ -695,9 +720,11 @@ export default function Page() {
                 <div className="relative flex flex-col flex-grow" style={{ zIndex: 1 }}>
                   {/* Profile Image */}
                   <div className="w-20 h-20 mb-4 overflow-hidden rounded-lg">
-                    <img 
+                    <Image 
                       src="/assets/Vinh.png" 
                       alt="Vinh Dinh" 
+                      width={80}
+                      height={80}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -731,9 +758,11 @@ export default function Page() {
                 <div className="relative flex flex-col flex-grow" style={{ zIndex: 1 }}>
                   {/* Profile Image */}
                   <div className="w-20 h-20 mb-4 overflow-hidden rounded-lg">
-                    <img 
+                    <Image 
                       src="/assets/Minh.jpg" 
                       alt="Minh Dinh" 
+                      width={80}
+                      height={80}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -767,9 +796,11 @@ export default function Page() {
                 <div className="relative flex flex-col flex-grow" style={{ zIndex: 1 }}>
                   {/* Profile Image */}
                   <div className="w-20 h-20 mb-4 overflow-hidden rounded-lg">
-                    <img 
+                    <Image 
                       src="/assets/Huynh.jpg" 
                       alt="Huynh Tran" 
+                      width={80}
+                      height={80}
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -997,7 +1028,7 @@ export default function Page() {
                       Submit Application
                     </button>
                     <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-3 text-center">
-                      We'll review your application and get back to you within 2-3 business days.
+                      We&apos;ll review your application and get back to you within 2-3 business days.
                     </p>
                   </div>
                 </form>
