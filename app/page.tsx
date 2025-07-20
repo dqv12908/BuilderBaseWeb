@@ -43,10 +43,13 @@ function InteractiveWhoAreWeSection() {
             {/* Left Half - Description */}
             <div className="space-y-6">
               <p className="text-xl md:text-2xl text-zinc-700 dark:text-zinc-300 leading-relaxed">
-                We are a vibrant community of ambitious high school students, university students, fresh graduates, and passionate builders who share an unwavering love for Web3 and blockchain technology.
+                We are a vibrant community of 30+ ambitious high school students, university students, fresh graduates, and passionate builders who share an unwavering love for Web3 and blockchain technology.
               </p>
               <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                United by our vision to shape the decentralized future, we collaborate, innovate, and push the boundaries of what&apos;s possible in the Web3 space. From smart contracts to DApps, we&apos;re building the next generation of digital experiences.
+                With 70% of our members being fresh graduate engineers, computing olympiad medalists, hackathon winners, and ambitious entrepreneurs, we bring exceptional talent and proven expertise to every project. United by our vision to shape the decentralized future, we collaborate, innovate, and push the boundaries of what&apos;s possible in the Web3 space.
+              </p>
+              <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                From smart contracts to DApps, we&apos;re building the next generation of digital experiences with a track record of excellence and achievement.
               </p>
               <div className="flex items-center space-x-4 text-sm text-zinc-500 dark:text-zinc-500">
                 <span className="flex items-center">
@@ -211,9 +214,9 @@ function InteractiveWhoAreWeSection() {
                   />
                 </div>
                 
-                {/* Center Text - Builder Base */}
+                {/* Center Logo - Builder Base */}
                 <div 
-                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black dark:text-white shadow-lg cursor-grab active:cursor-grabbing rounded-full p-0.5"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black dark:text-white shadow-lg cursor-grab active:cursor-grabbing rounded-full p-1"
                   style={{ 
                     zIndex: 3,
                     background: 'linear-gradient(45deg, #2563eb, #9333ea)',
@@ -221,9 +224,15 @@ function InteractiveWhoAreWeSection() {
                   onMouseDown={handleMouseDown}
                 >
                   <div 
-                    className="bg-white dark:bg-black px-10 py-5 rounded-full"
+                    className="bg-white dark:bg-black p-4 rounded-full flex items-center justify-center"
                   >
-                    <h3 className="text-2xl font-bold whitespace-nowrap text-black dark:text-white">Builder Base</h3>
+                    <Image 
+                      src="/assets/logo.png" 
+                      alt="Builder Base Logo" 
+                      width={80}
+                      height={80}
+                      className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                    />
                   </div>
                 </div>
                 
@@ -729,9 +738,12 @@ export default function Page() {
                     />
                   </div>
                   
-                  <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                  <h3 className="text-xl font-bold text-black dark:text-white mb-1">
                     Vinh Dinh
                   </h3>
+                  <p className="text-blue-600 dark:text-blue-400 text-sm font-medium mb-2">
+                    Founder & Lead Builder
+                  </p>
                   <p className="text-zinc-500 dark:text-zinc-400 text-sm mb-4">
                     Vinschool The Harmony
                   </p>
@@ -767,9 +779,12 @@ export default function Page() {
                     />
                   </div>
                   
-                  <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                  <h3 className="text-xl font-bold text-black dark:text-white mb-1">
                     Minh Dinh
                   </h3>
+                  <p className="text-blue-600 dark:text-blue-400 text-sm font-medium mb-2">
+                    Co-founder & Head of Operations
+                  </p>
                   <p className="text-zinc-500 dark:text-zinc-400 text-sm mb-4">
                     University of Transportation and Communication
                   </p>
@@ -805,9 +820,12 @@ export default function Page() {
                     />
                   </div>
                   
-                  <h3 className="text-xl font-bold text-black dark:text-white mb-2">
+                  <h3 className="text-xl font-bold text-black dark:text-white mb-1">
                     Huynh Tran
                   </h3>
+                  <p className="text-blue-600 dark:text-blue-400 text-sm font-medium mb-2">
+                    Co-founder & Head of Growth
+                  </p>
                   <p className="text-zinc-500 dark:text-zinc-400 text-sm mb-4">
                     Foreign Trade University
                   </p>
@@ -1048,7 +1066,16 @@ export default function Page() {
               
               {/* Brand Section */}
               <div className="md:col-span-2">
-                <h3 className="text-2xl font-bold text-white mb-4">Builder Base</h3>
+                <div className="flex items-center mb-4">
+                  <Image 
+                    src="/assets/logo.png" 
+                    alt="Builder Base Logo" 
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 mr-3 object-contain"
+                  />
+                  <h3 className="text-2xl font-bold text-white">Builder Base</h3>
+                </div>
                 <p className="text-zinc-400 mb-6 max-w-md">
                   A Web3 community in Hanoi, Vietnam, connecting ambitious students and professionals 
                   to build the future of blockchain technology together.

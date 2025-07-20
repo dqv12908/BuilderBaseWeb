@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react"
 import { motion } from "motion/react"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 
 interface CyberBackgroundProps {
@@ -237,8 +238,24 @@ export default function ParticlesBackground({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center space-y-2"
+          className="text-center space-y-6"
         >
+          {/* Logo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex justify-center"
+          >
+            <Image 
+              src="/assets/Nobglogo.png" 
+              alt="Builder Base Logo" 
+              width={120}
+              height={120}
+              className="w-24 h-24 md:w-32 md:h-32 object-contain"
+            />
+          </motion.div>
+          
           <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-black to-black/80 dark:from-white dark:to-white/80 drop-shadow-md">
             Builder Base
           </h1>
