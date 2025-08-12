@@ -3,6 +3,7 @@
 import ParticlesBackground from "@/components/particles-background"
 import { useState, useRef, useCallback } from "react"
 import Image from "next/image"
+import ftuLogo from "@/assets/ftu.png"
 
 function InteractiveWhoAreWeSection() {
   const [networkPosition, setNetworkPosition] = useState({ x: 0, y: 0 })
@@ -264,7 +265,7 @@ function InteractiveWhoAreWeSection() {
                   }}
                 >
                   <Image 
-                    src="https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/452928823_916337223855126_8701319332979974698_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=8Z3soIwuf88Q7kNvwGMnxTu&_nc_oc=Adm_shR3f7sUdRQvusxLC_vwnL-mh67PYpUpFJrCeGxYOrJjkJoR8MB3wEPK2l8AIh0&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=vHbu3ZTtLI4xfip1QrKWJg&oh=00_AfTG3mkuk2qd19SqWqDA-hYtYthpB00DUKDno_wJRCTPMA&oe=68816EAC" 
+                    src={ftuLogo} 
                     alt="Foreign Trade University logo" 
                     width={200}
                     height={100}
@@ -744,13 +745,9 @@ export default function Page() {
                   <p className="text-blue-600 dark:text-blue-400 text-sm font-medium mb-2">
                     Founder & Lead Builder
                   </p>
-                  <p className="text-zinc-500 dark:text-zinc-400 text-sm mb-4">
-                    Vinschool The Harmony
-                  </p>
                   <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300 mb-6 flex-grow">
-                    <div>• Winner of Cardano Blockchain Vietnam 2025</div>
+                    <div>• Winner of Cardano Blockchain Hackathon Vietnam 2025</div>
                     <div>• International Computing Olympiads medals</div>
-                    <div>• Web3 agency co-founder</div>
                   </div>
                   
                   {/* Contact Button */}
@@ -785,13 +782,10 @@ export default function Page() {
                   <p className="text-blue-600 dark:text-blue-400 text-sm font-medium mb-2">
                     Co-founder & Head of Operations
                   </p>
-                  <p className="text-zinc-500 dark:text-zinc-400 text-sm mb-4">
-                    University of Transportation and Communication
-                  </p>
                   <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300 mb-6 flex-grow">
                   <div>• Co-founder of Texblabs.com</div>
-                    <div>• VP of Blockchain Student Pioneer Club</div>
-                    <div>• Raised 100k ADA through Project Catalyst</div>
+                    <div>• VP of Blockchain Student Pioneer Club - a network of 100+ students across top universities in Vietnam</div>
+                    <div>• Raised 300k ADA through Project Catalyst</div>
                   </div>
                   
                   {/* Contact Button */}
@@ -826,11 +820,8 @@ export default function Page() {
                   <p className="text-blue-600 dark:text-blue-400 text-sm font-medium mb-2">
                     Co-founder & Head of Growth
                   </p>
-                  <p className="text-zinc-500 dark:text-zinc-400 text-sm mb-4">
-                    Foreign Trade University
-                  </p>
                   <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300 mb-6 flex-grow">
-                    <div>• Founder of Tarn Labs, Web3 agency</div>
+                    <div>• Founder of Tarn Labs - incubated U2U network, Hyra Network</div>
                     <div>• Web3 since 2018</div>
                   </div>
                   
@@ -1141,7 +1132,7 @@ export default function Page() {
                 <ul className="space-y-2">
                   <li>
                     <a 
-                      href="mailto:dqv12908@gmail.com" 
+                      href="mailto:builderbase.org@gmail.com" 
                       className="text-zinc-400 hover:text-white transition-colors duration-200 flex items-center"
                     >
                       <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
