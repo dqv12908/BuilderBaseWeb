@@ -717,7 +717,7 @@ export default function Page() {
             
             {/* Founding Team */}
             <div className="bg-zinc-50 dark:bg-zinc-950 p-8 border border-zinc-200 dark:border-zinc-800">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
               
               {/* Vinh Dinh */}
               <div className="relative bg-white dark:bg-zinc-900 p-8 border border-zinc-200 dark:border-zinc-800 overflow-hidden flex flex-col h-full hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer">
@@ -769,7 +769,7 @@ export default function Page() {
                   <div className="w-20 h-20 mb-4 overflow-hidden rounded-lg">
                     <Image 
                       src="/assets/Minh.jpg" 
-                      alt="Minh Dinh" 
+                      alt="Minh Le" 
                       width={80}
                       height={80}
                       className="w-full h-full object-cover"
@@ -822,12 +822,52 @@ export default function Page() {
                   </p>
                   <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300 mb-6 flex-grow">
                     <div>• Founder of Tarn Labs - incubated U2U network, Hyra Network</div>
+                    <div>• Led incubations raising $4.9M (Hyra Network) and $13.8M (U2U Network)</div>
                     <div>• Web3 since 2018</div>
                   </div>
                   
                   {/* Contact Button */}
                   <button className="w-full bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 border border-zinc-300 dark:border-zinc-600 py-2 px-4 text-sm text-zinc-700 dark:text-zinc-300 transition-colors duration-200 mt-auto">
                   <a href="https://x.com/huynhtarn">Contact</a>
+                  </button>
+                </div>
+              </div>
+
+              {/* Phuong Diep Nguyen */}
+              <div className="relative bg-white dark:bg-zinc-900 p-8 border border-zinc-200 dark:border-zinc-800 overflow-hidden flex flex-col h-full hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                {/* Rain Animation */}
+                <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+                  <div className="rain-drop" style={{ left: '15%', animationDelay: '0.3s' }}></div>
+                  <div className="rain-drop" style={{ left: '45%', animationDelay: '1.8s' }}></div>
+                  <div className="rain-drop" style={{ left: '75%', animationDelay: '3.2s' }}></div>
+                </div>
+                <div className="relative flex flex-col flex-grow" style={{ zIndex: 1 }}>
+                  {/* Profile Image */}
+                  <div className="w-20 h-20 mb-4 overflow-hidden rounded-lg">
+                    <Image 
+                      src="/assets/diep.jpg" 
+                      alt="Diep Nguyen" 
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-black dark:text-white mb-1">
+                    Diep Nguyen
+                  </h3>
+                  <p className="text-blue-600 dark:text-blue-400 text-sm font-medium mb-2">
+                    Legal & Stratigic Advisor
+                  </p>
+                  <div className="space-y-2 text-sm text-zinc-600 dark:text-zinc-300 mb-6 flex-grow">
+                    <div>• Hanoi Law University (2008)</div>
+                    <div>• Director of Authentik Vietnam Travel</div>
+                    <div>• Managing ~$10M annual revenue and 100 employees</div>
+                  </div>
+                  
+                  {/* Contact Button */}
+                  <button className="w-full bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 border border-zinc-300 dark:border-zinc-600 py-2 px-4 text-sm text-zinc-700 dark:text-zinc-300 transition-colors duration-200 mt-auto">
+                    <a href="mailto:phuongdiep.nsdj@gmail.com">Contact</a>
                   </button>
                 </div>
               </div>
