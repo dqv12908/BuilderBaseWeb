@@ -44,7 +44,8 @@ function InteractiveWhoAreWeSection() {
             {/* Left Half - Description */}
             <div className="space-y-6">
               <p className="text-xl md:text-2xl text-zinc-700 dark:text-zinc-300 leading-relaxed">
-                We are a vibrant community of 30+ ambitious high school students, university students, fresh graduates, and passionate builders who share an unwavering love for Web3 and blockchain technology.
+              We are a multidisciplinary community of 30+ builders—senior coders, business owners, high‑performing students, and recent graduates—    
+              committed to advancing Web3 and blockchain. We welcome anyone with the passion and drive to contribute meaningfully.
               </p>
               <p className="text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 With 70% of our members being fresh graduate engineers, computing olympiad medalists, hackathon winners, and ambitious entrepreneurs, we bring exceptional talent and proven expertise to every project. United by our vision to shape the decentralized future, we collaborate, innovate, and push the boundaries of what&apos;s possible in the Web3 space.
