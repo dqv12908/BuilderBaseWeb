@@ -4,6 +4,7 @@ import ParticlesBackground from "@/components/particles-background"
 import { useState, useRef, useCallback } from "react"
 import Image from "next/image"
 import ftuLogo from "@/assets/ftu.png"
+import catalystImage from "@/assets/catalyst.jpg"
 
 function InteractiveWhoAreWeSection() {
   const [networkPosition, setNetworkPosition] = useState({ x: 0, y: 0 })
@@ -427,6 +428,90 @@ export default function Page() {
         cursorInfluence={1000}
         cursorRadius={600}
       />
+      
+      {/* Catalyst Proposal Section */}
+      <section id="catalyst-proposal" className="w-full min-h-screen bg-white dark:bg-black py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-16 text-center">
+              Catalyst Proposal
+            </h2>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Left Side - Embedded Window */}
+              <div className="relative bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-hidden rounded-lg shadow-xl">
+                <iframe
+                  src="https://projectcatalyst.io/funds/14/cardano-use-cases-concepts/safe-and-trusted-otc-trading-with-reputation-on-cardano"
+                  className="w-full h-[600px] md:h-[700px]"
+                  title="Project Catalyst Proposal"
+                />
+              </div>
+              
+              {/* Right Side - Text Content */}
+              <div className="space-y-8">
+                <div className="relative bg-white dark:bg-zinc-900 p-8 border border-zinc-200 dark:border-zinc-800 overflow-hidden hover:shadow-xl transition-all duration-300">
+                  {/* Rain Animation */}
+                  <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 0 }}>
+                    <div className="rain-drop" style={{ left: '20%', animationDelay: '0s' }}></div>
+                    <div className="rain-drop" style={{ left: '50%', animationDelay: '1s' }}></div>
+                    <div className="rain-drop" style={{ left: '80%', animationDelay: '2s' }}></div>
+                  </div>
+                  
+                  <div className="relative space-y-6" style={{ zIndex: 1 }}>
+                    <p className="text-2xl md:text-3xl font-bold text-black dark:text-white leading-relaxed">
+                      We are building <span className="text-blue-600 dark:text-blue-400">REPUTA MARKET</span> - a platform that will eliminate scams on Cardano.
+                    </p>
+                    
+                    {/* Catalyst App Screenshot */}
+                    <div className="w-full max-w-md mx-auto">
+                      <Image 
+                        src={catalystImage}
+                        alt="Catalyst Voting App Screenshot"
+                        width={400}
+                        height={400}
+                        className="w-full h-auto rounded-lg border border-zinc-200 dark:border-zinc-700 shadow-lg"
+                      />
+                    </div>
+                    
+                    <p className="text-xl text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                      Voters, help us make this vision come true.
+                    </p>
+                    
+                    <div className="bg-zinc-100 dark:bg-zinc-800 p-6 rounded border border-zinc-200 dark:border-zinc-700">
+                      <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-4">
+                        On the voting app, you can search <span className="font-mono font-bold text-black dark:text-white">&quot;Reputation on Cardano&quot;</span> as the keyword.
+                      </p>
+                      <div className="text-sm text-zinc-500 dark:text-zinc-500 font-mono">
+                        Full title: &quot;Safe & Trusted OTC Trading with Reputation on Cardano.&quot;
+                      </div>
+                    </div>
+                    
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <a 
+                        href="https://projectcatalyst.io/funds/14/cardano-use-cases-concepts/safe-and-trusted-otc-trading-with-reputation-on-cardano"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-black dark:bg-white text-white dark:text-black px-8 py-4 font-medium hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors duration-200 text-center"
+                      >
+                        View Full Proposal →
+                      </a>
+                      
+                      <a 
+                        href="https://x.com/Vingdev/status/1972721147679744251"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block bg-blue-600 dark:bg-blue-500 text-white px-8 py-4 font-medium hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-200 text-center"
+                      >
+                        Pitching Video 🎥
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
       {/* Who Are We Section */}
       <InteractiveWhoAreWeSection />
